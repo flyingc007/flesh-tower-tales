@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "project_id": "38436280755015170",
+  "episode_id": "ep_1",
+  "episode_number": 1,
+  "revision": 1,
+  "duration_s": 72,
+  "duration_display": "1分12秒",
+  "stage_manifests": {
+    "script": "episodes/ep_1/01_剧本/script_contract_ep_1.json",
+    "storyboard": "episodes/ep_1/02_分镜/storyboard_ep_1.json",
+    "assets": "episodes/ep_1/03_资产/asset_usage_ep_1.json",
+    "keyframes": "episodes/ep_1/03_资产/keyframe_manifest_ep_1.json",
+    "video": "episodes/ep_1/04_视频片段/video_manifest_ep_1.json",
+    "continuity": "episodes/ep_1/04_视频片段/continuity_ep_1.json",
+    "delivery": "episodes/ep_1/05_成片/delivery_manifest_ep_1.json"
+  }
+}

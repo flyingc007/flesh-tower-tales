@@ -1,0 +1,668 @@
+{
+  "schema_version": "1.0",
+  "project_id": "38436280755015170",
+  "revision": 1,
+  "objective": {
+    "delivery_type": "single_short_video",
+    "workflow_mode": "full",
+    "target_stage": "final",
+    "project_goal": "将九华山民间传说《肉身塔为什么不开门》制作成一条72秒民间传说剧情短片（16:9横屏、9段、无字幕成片），逐段生成并最终拼接交付。",
+    "success_definition": "9段视频（SEG001-SEG009，总72秒）全部生成并逐段交付上画布；经拼接确认后产出并交付唯一一条无字幕成片。",
+    "non_goals": [
+      "不新增桥段、人物或原创台词",
+      "不切换视频模型或画幅比例",
+      "不生成字幕"
+    ]
+  },
+  "source_lock": {
+    "user_requirements": [
+      "忠于原著民间传说，严禁新增桥段/人物/原创台词",
+      "9段视频逐段生成+后期合成一条成片（16:9横屏，总约72秒）",
+      "默认无字幕；片段交付前检查并擦除字幕残留",
+      "角色形态严格区分：肉身塔内=金乔觉不坏肉身真身；仙境对话=地藏显圣版+王灵官显圣版"
+    ],
+    "must_include": [
+      "开篇香客朝山盼肉身塔开门",
+      "状元不信决定亲往验证",
+      "开塔锥刺菩萨真身",
+      "脚不淌血、头不痛、暗自发笑",
+      "隐藏内情：地藏忍痛",
+      "状元回京轿中自语",
+      "王灵官怒喝问罪",
+      "地藏吩咐“过了五里桥就算了”",
+      "五溪桥误杀",
+      "王灵官复命“这罪孽被我一鞭打死了”",
+      "地藏怒斥“给我滚出去”",
+      "王灵官守塔门外",
+      "结局点题“肉身塔从此再也没有开过”"
+    ],
+    "must_avoid": [
+      "新增桥段/人物/原创台词",
+      "混用角色形态（塔内肉身 vs 显圣版）",
+      "把状元锥刺后写成头痛或惊惧",
+      "画面字幕/水印残留"
+    ],
+    "verified_facts": [
+      "九华山肉身塔为地藏菩萨（金乔觉）真身供奉地（传说语境）",
+      "传说原文关键台词：“过了五里桥就算了”“给我滚出去”“肉身塔从此再也没有开过了”"
+    ],
+    "pending_facts": [],
+    "assumptions": [
+      "分镜表v3与剧本个别措辞出入时，执行一律以01_剧本/剧本_忠于原著.md逐字源为准",
+      "视频模型原生人声承担全部旁白与台词（默认无字幕）"
+    ]
+  },
+  "language_contract": {
+    "instruction_language": "zh-CN",
+    "output_language": "zh-CN",
+    "video_language": "zh-CN",
+    "subtitle_language": "zh-CN",
+    "preserve_source_dialogue": true,
+    "explicit_overrides": [
+      "逐字保留原著台词与旁白，不可增删改"
+    ]
+  },
+  "audience_plan": {
+    "user_defined": true,
+    "target_audience": "民间传说、灵异传说故事与传统文化内容爱好者",
+    "core_pain_or_desire": "想听一个完整、有因果、有反转的民间传说故事",
+    "platform": "短视频平台（横屏观看）",
+    "evidence_status": "assumed",
+    "verified_sources": [],
+    "viewing_focus": "观众紧盯肉身塔为何不再开门：由锥刺菩萨、听错地名（五里桥/五溪桥）、一鞭打死、怒斥滚出去，最终揭晓塔门永闭的因果",
+    "emotional_payoff": "结局豁然：传说的因果闭合与敬畏感——肉身塔从此再未开门",
+    "platform_viewing_context": "横屏16:9，中近景为主，台词靠人声清晰叙事，画面不出现字幕",
+    "expression_boundaries": [
+      "不得把神明显圣演成滑稽或恐怖",
+      "状元锥刺后是暗自发笑而非头痛惊惧",
+      "不出现现代元素、水印或平台UI"
+    ],
+    "execution_sources": {
+      "viewing_focus": "audience_plan.viewing_focus",
+      "emotional_payoff": "audience_plan.emotional_payoff",
+      "platform_viewing_context": "audience_plan.platform_viewing_context",
+      "expression_boundaries": "audience_plan.expression_boundaries"
+    }
+  },
+  "direction_candidates": [
+    {
+      "direction_id": "D1",
+      "primary": "忠于原著传说的单线因果叙事：朝山悬念开场→不信→锥刺试神→口误酿祸→怒斥→塔门永闭",
+      "supporting": [
+        "悬念钩子（肉身塔为何不开门）",
+        "误会驱动（五里桥/五溪桥）",
+        "结局点题"
+      ]
+    }
+  ],
+  "selected_direction_id": "D1",
+  "selection_reason": "用户已确认完整方案（剧本/分镜v3/图像资产/9段时长/seedance 2.0 fast/无字幕），沿用唯一执行方案，不另造方向。",
+  "creative_mechanism": {
+    "selection_mode": "user_locked",
+    "candidates": [
+      {
+        "primary": "因果误会驱动：一句口误（五里桥vs五溪桥）酿成误杀，再由地藏怒斥收束因果、以肉身塔永闭作结局承诺",
+        "supporting": [
+          "悬念钩子驱动：肉身塔为何不开门",
+          "惩罚兑现驱动：王灵官一鞭打死状元并遭斥退",
+          "传说收束驱动：王灵官守门、肉身塔永不再开"
+        ]
+      }
+    ],
+    "primary": "因果误会驱动：一句口误（五里桥vs五溪桥）酿成误杀，再由地藏怒斥收束因果、以肉身塔永闭作结局承诺",
+    "supporting": [
+      "悬念钩子驱动：肉身塔为何不开门",
+      "惩罚兑现驱动：王灵官一鞭打死状元并遭斥退",
+      "传说收束驱动：王灵官守门、肉身塔永不再开"
+    ],
+    "selection_evidence": {
+      "user_match": "方案已由用户逐项确认（剧本/分镜/资产/时长/模型/字幕），沿用不动",
+      "core_proof": "结局旁白直接点题肉身塔永闭，因果完整",
+      "continuity": "9段按分镜v3连续承接，角色形态分线绑定资产",
+      "generation_stability": "每段≤15秒满足seedance 2.0 fast，逐段图片输入锁身份"
+    }
+  },
+  "creative_proposition": {
+    "one_sentence_value": "不信地藏灵验的新科状元用锥子试探菩萨真身，因一句听错地名的口误被护法神误杀，最终肉身塔永闭，传说自此流传。",
+    "core_dramatic_question": "肉身塔为什么不开门？",
+    "emotional_reward": "敬畏与因果闭合：神明显圣的威严、误杀的荒诞与结局的余韵",
+    "differentiation": "忠于原著传说的逐字旁白，角色形态严格区分（肉身真身/显圣版），以口误酿祸收束因果",
+    "proof_or_payoff": "结局旁白点题：王灵官日夜守门，肉身塔从此再也没有开过"
+  },
+  "opening_strategy": {
+    "opening_id": "OPEN001",
+    "primary_type": "mystery_question",
+    "supporting_types": [
+      "world_spectacle"
+    ],
+    "opening_window": "0-8秒（SEG001）",
+    "first_observable_promise": "古历七月三十，香客云集九华山朝山进香，都盼肉身塔开门",
+    "escalation_trigger": "新科状元不肯信这些，决定亲自到九华山验证",
+    "payoff_or_rollover": "SEG003开塔日锥刺菩萨真身，进入试神高潮",
+    "bans": [
+      "不以恐怖画面开场",
+      "不堆特效"
+    ]
+  },
+  "type_strategy": {
+    "format": "微电影/短片",
+    "subject_route": "民间传说",
+    "subject_subroute": "九华山地域传说/因果报应主题",
+    "format_strategy": {
+      "narrative_carrier": "旁白叙事为主、出镜对白为辅的传说讲述体",
+      "scene_granularity": "按传说情节取关键场面：朝山、塔内、山道轿路、五溪桥、塔门外",
+      "dialogue_and_narration": "全部逐字取自原著，旁白跨段分配控制朗读时长",
+      "performance_and_action": "庄敬表演，锥刺、怒喝、挥鞭等动作明确但不过度戏剧化"
+    },
+    "intersection_strategy": {
+      "hook": "肉身塔为何不开门（悬念）+香客求愿（氛围）",
+      "conflict": "凡人试神vs神明威仪，口误酿祸",
+      "climax_payoff": "王灵官怒喝挥鞭→地藏怒斥“给我滚出去”",
+      "production_compensation": "角色形态分线绑定资产+逐字台词保障因果清晰"
+    },
+    "genre": "民间传说/神怪",
+    "subgenre": "因果报应传说",
+    "setting": "南宋末年九华山：肉身塔、肉身宝殿、深山古林、山间轿路、五溪桥、塔门外",
+    "core_conflict": "凡人试神vs神明威仪；听错地名的误会酿成误杀",
+    "story_engine": "误会驱动：听错地名（五里桥/五溪桥）→误杀→怒斥→永闭塔门",
+    "audience_promise": "结局必有点题：肉身塔从此再也没有开过",
+    "tone": "庄敬、神秘、带宿命感的民间传说语调",
+    "narrative_structure": "顺叙+隐藏内情穿插+结局点题",
+    "main_path": "开篇朝山→状元不信→开塔锥刺→暗自发笑/地藏忍痛→回京自语→王灵官问罪→五溪桥误杀→复命怒斥→守门与永闭",
+    "supporting_path": "隐藏内情旁白（地藏忍痛）在锥刺后补足神明视角张力",
+    "adopted_mechanisms": [
+      "悬念钩子",
+      "误会酿祸",
+      "神明威仪",
+      "隐藏内情",
+      "结局点题"
+    ],
+    "rejected_mechanisms": [
+      "恐怖惊吓",
+      "恶搞反差",
+      "强行说教"
+    ]
+  },
+  "highlight_strategy": {
+    "primary_story_engine_id": "CUSTOM-MISHEARING-CAUSALITY",
+    "secondary_story_engine_id": "CUSTOM-REVERENCE-PAYOFF",
+    "secondary_engine_role": "结局收束与情绪回报",
+    "project_signature": "以一句听错的地名（五里桥/五溪桥）作为全片因果发动机；锥刺不流血、头不痛、暗自发笑与地藏忍痛的双重视角构成张力；最终肉身塔永闭点题",
+    "highlight_pillars": [
+      {
+        "pillar_id": "HP001",
+        "name": "锥刺试神",
+        "setup": "开塔之日状元一步一拜上肉身塔，取出锥子刺向菩萨的脚",
+        "payoff": "脚不淌血、头不痛、状元暗自发笑；隐藏内情：地藏忍痛难当",
+        "genre_duty": "凡人试神的神明威仪场面",
+        "format_expression": "塔内特写：锥刺动作→脚面无血→状元自笑→地藏咬牙",
+        "uniqueness": "双重视角（状元不信+地藏忍痛）同一锥刺"
+      },
+      {
+        "pillar_id": "HP002",
+        "name": "口误酿祸",
+        "setup": "地藏吩咐“过了五里桥就算了”",
+        "payoff": "王灵官在五溪桥上一鞭打死状元；复命后被地藏怒斥“给我滚出去”",
+        "genre_duty": "误会驱动的因果爆发",
+        "format_expression": "怒喝挥鞭→桥上一鞭→地藏怒斥逐出",
+        "uniqueness": "一字之差决定生死，传说因果闭环"
+      },
+      {
+        "pillar_id": "HP003",
+        "name": "塔门永闭",
+        "setup": "王灵官恍然大悟听错地名，搬到塔门外日夜守卫",
+        "payoff": "肉身塔从此再也没有开过",
+        "genre_duty": "结局点题与情绪余韵",
+        "format_expression": "近景守门→远景肉身塔渐暗收束",
+        "uniqueness": "守护者成为传说封存的具象"
+      }
+    ],
+    "distribution_policy": "建立：SEG001-002朝山与不信；变奏：SEG003-004锥刺与暗自发笑+隐藏内情；升级：SEG006-008五里桥口误→五溪桥误杀→怒斥滚出去；回收：SEG009王灵官守门与塔门永闭",
+    "rejected_cliches": [
+      "靠恐怖画面博眼球",
+      "滥用金光特效堆砌显圣",
+      "说教式结尾字幕"
+    ]
+  },
+  "style_contract": {
+    "anchor_type": "photo_reference_assets",
+    "anchor": "以03_图像资产已确认的写实国风人物与场景图为视觉锚点（全部图片输入走真实传图）",
+    "lighting": "晨昏自然光与殿堂烛光并置：山间晨雾柔光、塔内暖黄烛光、显圣场景金色光环",
+    "color": "素雅传统色：山石青灰、殿墙赭黄、袈裟深红、显圣金环",
+    "composition": "中近景人物为主，塔内对称庄严构图，显圣以光环衬托主体",
+    "material": "写实质感：古建木石、织物、云雾",
+    "camera_tendency": "缓推/缓移为主，朝拜俯拍与显圣仰拍",
+    "sound_tendency": "人声叙事为主、环境声为辅，无BGM",
+    "excluded_mechanisms": [
+      "现代滤镜",
+      "夸张特效",
+      "二次元风格"
+    ]
+  },
+  "emotion_design": {
+    "curve_type": "克制积累→局部释放→完整爆发→余韵",
+    "stages": [
+      {
+        "stage_id": "E1",
+        "node": "朝山许愿",
+        "intensity": 2,
+        "emotion": "祥和期盼"
+      },
+      {
+        "stage_id": "E2",
+        "node": "状元不信",
+        "intensity": 2,
+        "emotion": "轻慢挑衅"
+      },
+      {
+        "stage_id": "E3",
+        "node": "锥刺试神",
+        "intensity": 3,
+        "emotion": "暗中试探"
+      },
+      {
+        "stage_id": "E4",
+        "node": "不流血暗笑+地藏忍痛",
+        "intensity": 3,
+        "emotion": "荒诞与隐忍"
+      },
+      {
+        "stage_id": "E5",
+        "node": "回京自语",
+        "intensity": 3,
+        "emotion": "傲慢轻蔑"
+      },
+      {
+        "stage_id": "E6",
+        "node": "王灵官问罪",
+        "intensity": 4,
+        "emotion": "怒不可遏"
+      },
+      {
+        "stage_id": "E7",
+        "node": "五溪桥误杀",
+        "intensity": 5,
+        "emotion": "雷霆一鞭"
+      },
+      {
+        "stage_id": "E8",
+        "node": "怒斥滚出去",
+        "intensity": 4,
+        "emotion": "威严震怒"
+      },
+      {
+        "stage_id": "E9",
+        "node": "守门与永闭",
+        "intensity": 3,
+        "emotion": "余韵敬畏"
+      }
+    ],
+    "character_curves": [
+      {
+        "character": "新科状元",
+        "events": [
+          "不信神明→锥刺试神→暗自发笑→桥上一鞭毙命"
+        ]
+      },
+      {
+        "character": "地藏王菩萨",
+        "events": [
+          "受锥忍痛→宽宥吩咐五里桥→闻误杀怒斥滚出去"
+        ]
+      },
+      {
+        "character": "王灵官",
+        "events": [
+          "见菩萨忍痛问罪→化风去五溪桥一鞭打死→恍然大悟听错地名→守门尽忠"
+        ]
+      }
+    ]
+  },
+  "rhythm_design": {
+    "immutable_nodes": [
+      "开篇朝山许愿（SEG001）",
+      "状元不信（SEG002）",
+      "锥刺试神（SEG003）",
+      "不流血暗自发笑与地藏忍痛（SEG004）",
+      "回京自语（SEG005）",
+      "地藏吩咐五里桥（SEG006）",
+      "怒喝与五溪桥误杀（SEG007）",
+      "复命与怒斥（SEG008）",
+      "守门与塔门永闭（SEG009）"
+    ],
+    "node_loads": [
+      {
+        "node": "开篇朝山",
+        "info_density": "高",
+        "action_intensity": 2,
+        "reading_time": "8秒"
+      },
+      {
+        "node": "状元不信",
+        "info_density": "高",
+        "action_intensity": 2,
+        "reading_time": "8秒"
+      },
+      {
+        "node": "锥刺试神",
+        "info_density": "高",
+        "action_intensity": 3,
+        "reading_time": "8秒"
+      },
+      {
+        "node": "暗自发笑与忍痛",
+        "info_density": "中",
+        "action_intensity": 3,
+        "reading_time": "8秒"
+      },
+      {
+        "node": "回京自语",
+        "info_density": "中",
+        "action_intensity": 2,
+        "reading_time": "8秒"
+      },
+      {
+        "node": "吩咐五里桥",
+        "info_density": "中",
+        "action_intensity": 3,
+        "reading_time": "8秒"
+      },
+      {
+        "node": "怒喝与误杀",
+        "info_density": "高",
+        "action_intensity": 5,
+        "reading_time": "6秒"
+      },
+      {
+        "node": "复命与怒斥",
+        "info_density": "高",
+        "action_intensity": 4,
+        "reading_time": "8秒"
+      },
+      {
+        "node": "守门与永闭",
+        "info_density": "中",
+        "action_intensity": 3,
+        "reading_time": "10秒"
+      }
+    ],
+    "primary_downbeat": "SEG009结局旁白“肉身塔从此再也没有开过”（全片唯一重拍点题）",
+    "transition_choices": [
+      "SEG间以连续运镜与旁白承接（continuous）",
+      "显圣空间以金光转场锚点切换",
+      "SEG005回京以山道轿路建立新场景"
+    ],
+    "duration_allocation": "9段按分镜v3：SEG001-006各8秒、SEG007为6秒、SEG008为8秒、SEG009为10秒，合计72秒",
+    "intensity_sequence": {
+      "values": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        5,
+        4,
+        3
+      ],
+      "scale": "全片9段强度序列，1-5整数，对应SEG001-009"
+    },
+    "selected_wave": "稳态建立→突然打断→连续应对→新稳定（锥刺打断朝山祥和，误杀打断回程，守门建立新稳定）"
+  },
+  "scale_plan": {
+    "format_mode": "single_short",
+    "episode_count": 1,
+    "episode_durations_s": [
+      72
+    ],
+    "episode_duration_displays": [
+      "1分12秒"
+    ],
+    "total_duration_s": 72,
+    "total_duration_display": "72秒/1分12秒",
+    "duration_display_mode": "自然时长",
+    "aspect_ratio": "16:9",
+    "segment_duration_policy": "9段连续：SEG001-006各8秒、SEG007为6秒、SEG008为8秒、SEG009为10秒；每段≤15秒满足seedance 2.0 fast上限",
+    "video_confirmation_policy": "每批1-2个连续SEG，展示合并参数确认表+五列分镜表并取得generate后再生成；全部片段交付后经拼接确认再合成"
+  },
+  "model_plan": {
+    "image": {
+      "model": "seedream 5.0 flash",
+      "selection_source": "default",
+      "user_requested_model": "",
+      "purpose": "本项目视觉资产为用户已确认图，不新增生图；关键帧阶段按需使用",
+      "schema_verified": true
+    },
+    "video": {
+      "model": "seedance 2.0 fast",
+      "selection_source": "default",
+      "user_requested_model": "",
+      "purpose": "9段视频生成，每段≤15秒",
+      "schema_verified": true
+    }
+  },
+  "delivery_settings": {
+    "dialogue_language": "中文",
+    "asr_language_code": "zh",
+    "output_fps": "按宿主默认",
+    "intro_outro_policy": "无",
+    "bgm_policy": "无",
+    "subtitle_enabled": false,
+    "subtitle_policy": "disabled",
+    "video_generation_subtitles": false,
+    "audio_policy": "视频模型原生人声与音效，不额外生成音轨",
+    "final_deliverables": [
+      "clean_master"
+    ]
+  },
+  "asset_forecast": {
+    "estimated_character_count": 6,
+    "estimated_scene_count": 6,
+    "estimated_characters": [
+      {
+        "asset_id": "CHR001",
+        "name": "新科状元",
+        "desc": "宋末青年，明代官服"
+      },
+      {
+        "asset_id": "CHR002",
+        "name": "地藏王菩萨显圣版",
+        "desc": "青年佛相，莲台云海锡杖托珠"
+      },
+      {
+        "asset_id": "CHR003",
+        "name": "金乔觉不坏肉身真身",
+        "desc": "塔内结跏趺坐深红袈裟年长僧"
+      },
+      {
+        "asset_id": "CHR004",
+        "name": "王灵官显圣版",
+        "desc": "红面三眼鎏金铠甲红袍铁鞭"
+      },
+      {
+        "asset_id": "CHR005",
+        "name": "九华山香客群演",
+        "desc": "素雅祈福群像"
+      },
+      {
+        "asset_id": "CHR006",
+        "name": "地藏与王灵官同框显圣",
+        "desc": "云端同框关系构图"
+      }
+    ],
+    "estimated_scenes": [
+      {
+        "asset_id": "SCN001",
+        "name": "深山古林",
+        "desc": "山道石阶朝山路"
+      },
+      {
+        "asset_id": "SCN002",
+        "name": "肉身宝殿",
+        "desc": "塔外殿宇"
+      },
+      {
+        "asset_id": "SCN003",
+        "name": "山间轿路",
+        "desc": "回京山道"
+      },
+      {
+        "asset_id": "SCN004",
+        "name": "五溪桥",
+        "desc": "塔门外石拱桥"
+      },
+      {
+        "asset_id": "SCN005",
+        "name": "肉身塔前",
+        "desc": "峰顶塔门"
+      },
+      {
+        "asset_id": "SCN006",
+        "name": "金光显圣空间",
+        "desc": "仙境对话场景"
+      }
+    ],
+    "estimated_story_props": [
+      {
+        "name": "锥子",
+        "desc": "状元随身备用的试探道具，一次性证据物，不升级PROP"
+      },
+      {
+        "name": "轿子",
+        "desc": "SEG005回京乘轿，画面资产无轿需Prompt补，一次性"
+      },
+      {
+        "name": "铁鞭",
+        "desc": "王灵官随身法器，跟随CHR004资产"
+      }
+    ],
+    "global_style_moodboards": 1,
+    "estimated_keyframes": 4,
+    "voice_roles": [
+      {
+        "voice_id": "VOICE001",
+        "owner": "旁白",
+        "anchor": "沉稳中年男声，说书语调，字句清晰"
+      },
+      {
+        "voice_id": "VOICE002",
+        "owner": "新科状元",
+        "anchor": "年轻男子，语带轻慢自得"
+      },
+      {
+        "voice_id": "VOICE003",
+        "owner": "王灵官",
+        "anchor": "粗犷威严男声，怒喝有威势"
+      },
+      {
+        "voice_id": "VOICE004",
+        "owner": "地藏王菩萨",
+        "anchor": "宽厚庄重男声，语速舒缓"
+      }
+    ],
+    "known_state_versions": [
+      "状元基准状态",
+      "地藏_显圣版",
+      "地藏_肉身塔内",
+      "王灵官_显圣版",
+      "地藏王灵官同框显圣"
+    ],
+    "reference_budget_risks": [
+      "同一段引用图受工具输入上限约束，必要时按角色/场景分批传图",
+      "同框图与群演合照可能复制多人，Prompt需明确防复制"
+    ]
+  },
+  "risk_plan": [
+    {
+      "risk": "旁白超长超出4汉字/秒上限",
+      "mitigation": "按原著拆句跨SEG分配、长句改画外音，不删改台词文本",
+      "status": "planned"
+    },
+    {
+      "risk": "角色形态混用",
+      "mitigation": "塔内段绑定CHR003，显圣段绑定CHR002/CHR004，Prompt锁死",
+      "status": "planned"
+    },
+    {
+      "risk": "工具输入上限",
+      "mitigation": "每批1-2段，真实传图按需裁剪弱参考",
+      "status": "planned"
+    },
+    {
+      "risk": "关键帧阶段与用户已确认方案的衔接",
+      "mitigation": "按用户已确认方案优先，向用户说明后执行必要阶段确认",
+      "status": "pending_user_decision"
+    },
+    {
+      "risk": "连续承接漂移",
+      "mitigation": "非首段传上一段真实尾帧并登记FRM/SEAM",
+      "status": "planned"
+    }
+  ],
+  "verification_plan": [
+    {
+      "stage": "planning",
+      "checks": [
+        "参数确认表展示并取得proceed_project",
+        "drama_lint --stage planning 通过"
+      ]
+    },
+    {
+      "stage": "script",
+      "checks": [
+        "项目级故事包与分集剧本登记，用户确认",
+        "drama_lint --stage script 通过"
+      ]
+    },
+    {
+      "stage": "assets",
+      "checks": [
+        "复用登记、资产可打开、身份状态通过，用户确认",
+        "drama_lint --stage assets 通过"
+      ]
+    },
+    {
+      "stage": "storyboard",
+      "checks": [
+        "分镜文件齐全，镜头/片段/高光/受众执行齐全，用户确认",
+        "drama_lint --stage storyboard 通过"
+      ]
+    },
+    {
+      "stage": "keyframes",
+      "checks": [
+        "3-4张KF逐张生成交付上画布，用户确认",
+        "drama_lint --stage keyframes 通过"
+      ]
+    },
+    {
+      "stage": "video",
+      "checks": [
+        "每批两张表+generate确认，逐段保存登记交付回读",
+        "drama_lint --stage video 通过"
+      ]
+    },
+    {
+      "stage": "final",
+      "checks": [
+        "拼接确认proceed_assembly，成片基础可交付检查，只交付clean_master",
+        "drama_lint --stage final 通过"
+      ]
+    }
+  ],
+  "handoff": {
+    "script_must_inherit": [
+      "source_lock全部逐字台词与红线",
+      "creative_proposition",
+      "opening_strategy",
+      "type_strategy",
+      "highlight_strategy",
+      "style_contract",
+      "emotion_design",
+      "scale_plan",
+      "risk_plan"
+    ],
+    "asset_reuse": "03_图像资产全部13类19图已登记为reviewed，资产阶段确认后转approved",
+    "note": "执行一律以01_剧本/剧本_忠于原著.md为台词逐字源"
+  }
+}

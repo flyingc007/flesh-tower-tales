@@ -1,0 +1,31 @@
+{
+  "project_id": "38436280755015170",
+  "revision": 1,
+  "current_stage": "planning",
+  "current_episode": null,
+  "phases": {
+    "planning": "awaiting_confirmation",
+    "script": "pending",
+    "assets": "pending",
+    "storyboard": "pending",
+    "keyframes": "pending",
+    "video": "pending",
+    "final": "pending"
+  },
+  "episodes": {
+    "ep_1": {
+      "manifest": "episodes/ep_1/episode_manifest_ep_1.json",
+      "stage_status": {
+        "script": "pending",
+        "assets": "pending",
+        "storyboard": "pending",
+        "keyframes": "pending",
+        "video": "pending",
+        "final": "pending"
+      }
+    }
+  },
+  "artifacts": [],
+  "open_issues": [],
+  "last_successful_operation": ""
+}

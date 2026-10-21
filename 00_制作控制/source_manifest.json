@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "project_id": "38436280755015170",
+  "revision": 1,
+  "sources": [
+    {
+      "source_id": "SRC001",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/地藏_显圣版/地藏菩萨16_9人物资产布局.jpeg",
+      "sha256": "89d93208d15858c91ee39f69fdd7be6da0c22b6e9a49ac6635ec000c69132ed6",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC002",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/地藏_显圣版/地藏菩萨显圣定妆照.png",
+      "sha256": "f8b9c2fa655517923867e6d9f60c8377d3fb94d5990421acbdb420b82292d5c1",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC003",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/地藏_肉身塔内/老年照.jpeg",
+      "sha256": "0c6a34f9a244a03d6c028a2b86efcc9734992e4977f98761870d482a0b819ab9",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC004",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/地藏_肉身塔内/调整肤色.png",
+      "sha256": "def9a9946e9113a4f3689ab0abfb34070f7d7c48ab47dffce30276bf162d378a",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC005",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/状元/肉身塔不开门的传说 (1).jpeg",
+      "sha256": "869ee13f126f65128ca77de3d1fe4f636c410185131ae5952f4b509209f68f56",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC006",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/王灵官_显圣版/王灵官显圣版.png",
+      "sha256": "07e0241bf42b83aac235d5fb44503c4ab9d3d650648bfc3296556c1a029edff7",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC007",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/王灵官和地藏菩萨同框显圣.png",
+      "sha256": "3624b3dd188766e89fc08964dfac21f499c0f69273a0839430a4ad704fa30867",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC008",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/群演/书生.png",
+      "sha256": "1f12997a66d9356b4f3a9b9ee17be72789e59d248780ab8cf1e5100b247b40ff",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC009",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/群演/女子.png",
+      "sha256": "acaf062af36fb8c1f19fe43380097f6e2de9bdc26f1bb0a5cb64187dc583c1fe",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC010",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/群演/男子.png",
+      "sha256": "17c5160d3ff86a7a6ecce91a6b1b2f549c93152fc8de203f5b7d86d95821dd8e",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC011",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/群演/群演合照.png",
+      "sha256": "b24473c1f8ef66384d75cf738339633cc87eaf10004dc0342128c0831fd2e9c2",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC012",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/群演/老年女人.png",
+      "sha256": "6caba42a4a829786972ac9d294a67ca34478ebc2a52cde3349606e46b37588d8",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC013",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/人物/群演/老年男子.png",
+      "sha256": "ecbdfa23f0936fc9982e8ee9bceb39a27382d640885fe48501a1a5782bc6f3db",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC014",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/场景/五溪桥（塔门外）.png",
+      "sha256": "709da18e8bc7f382f220b37b6d43210c4cada51823f73c871a5c4f1ae35f854f",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC015",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/场景/山间轿路.png",
+      "sha256": "06ed105af4557fb4d099ad66bc8d5c21d342b4df8d1e07335b8e16d99ae8661a",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC016",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/场景/深山古林.png",
+      "sha256": "c7d240f6272ba778d9259ce8c8cae55ce142232a76f8634012fba4214c8a51d7",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC017",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/场景/肉身塔前.png",
+      "sha256": "ad34f591e425882ce33042d1ec02ec26409cc357b427d29e4771526f6ea2a856",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC018",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/场景/肉身宝殿.png",
+      "sha256": "b3c17c3baa48bd7a9931514bd127e35b759e99979a862953cbeeda9b90946d9a",
+      "source_origin": "user_upload"
+    },
+    {
+      "source_id": "SRC019",
+      "media_type": "image",
+      "source_uri": "",
+      "stored_path": "03_图像资产/场景/金光打开现实时空显圣场景.png",
+      "sha256": "4051b0ecddafb05a161b6c43955aa0fa37c0b3d23629d5aaefee32961ac1857a",
+      "source_origin": "user_upload"
+    }
+  ]
+}

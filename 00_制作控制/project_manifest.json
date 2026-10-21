@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "project_id": "38436280755015170",
+  "revision": 1,
+  "format_mode": "single_short",
+  "episode_count": 1,
+  "episode_ids": [
+    "ep_1"
+  ],
+  "plan_path": "00_制作控制/drama_plan.json",
+  "state_path": "00_制作控制/制作状态.json",
+  "source_manifest_path": "00_制作控制/source_manifest.json",
+  "project_data_card_path": "00_制作控制/project_data_card.json",
+  "shared_asset_registry_path": "shared/03_资产/asset_registry.json",
+  "episode_seams_path": "00_制作控制/episode_seams.json",
+  "project_script_manifest_path": "01_剧本/project_script_manifest.json",
+  "episode_manifests": {
+    "ep_1": "episodes/ep_1/episode_manifest_ep_1.json"
+  }
+}

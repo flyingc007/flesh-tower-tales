@@ -1,0 +1,371 @@
+{
+  "schema_version": "1.0",
+  "project_id": "38436280755015170",
+  "revision": 1,
+  "assets": [
+    {
+      "asset_id": "CHR001",
+      "category": "character",
+      "name": "新科状元（宋末青年）",
+      "version": "v01",
+      "status": "reviewed",
+      "files": [
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/状元/肉身塔不开门的传说 (1).jpeg"
+      ],
+      "source_ids": [
+        "SRC005"
+      ],
+      "reference_asset_ids": [],
+      "locked_features": [
+        "明代官服青年立绘",
+        "纯白背景",
+        "身姿端正",
+        "右下水印需剥离"
+      ],
+      "variable_states": [
+        "基准状态"
+      ],
+      "used_by_episodes": [
+        "ep_1"
+      ],
+      "used_by_shots": [],
+      "project_visual_mode": "photoreal",
+      "generation": {},
+      "last_reviewed": ""
+    },
+    {
+      "asset_id": "CHR002",
+      "category": "character",
+      "name": "地藏王菩萨·显圣版",
+      "version": "v01",
+      "status": "reviewed",
+      "files": [
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/地藏_显圣版/地藏菩萨显圣定妆照.png",
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/地藏_显圣版/地藏菩萨16_9人物资产布局.jpeg"
+      ],
+      "source_ids": [
+        "SRC002",
+        "SRC001"
+      ],
+      "reference_asset_ids": [],
+      "locked_features": [
+        "青年佛相立莲台云海",
+        "橙红僧衣袒右肩蓝螺髻",
+        "持锡杖托光球金环光",
+        "右下水印需剥离"
+      ],
+      "variable_states": [
+        "显圣状态",
+        "16:9布局图为三视图需防复制多角色"
+      ],
+      "used_by_episodes": [
+        "ep_1"
+      ],
+      "used_by_shots": [],
+      "project_visual_mode": "photoreal",
+      "generation": {},
+      "last_reviewed": ""
+    },
+    {
+      "asset_id": "CHR003",
+      "category": "character",
+      "name": "金乔觉不坏肉身真身（塔内）",
+      "version": "v01",
+      "status": "reviewed",
+      "files": [
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/地藏_肉身塔内/调整肤色.png",
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/地藏_肉身塔内/老年照.jpeg"
+      ],
+      "source_ids": [
+        "SRC004",
+        "SRC003"
+      ],
+      "reference_asset_ids": [],
+      "locked_features": [
+        "结跏趺坐深红袈裟年长僧",
+        "禅定印",
+        "调整肤色图为殿堂内环境版",
+        "老年照为白底闭眼半身",
+        "右下水印需剥离"
+      ],
+      "variable_states": [
+        "塔内肉身状态",
+        "环境版自带殿堂背景"
+      ],
+      "used_by_episodes": [
+        "ep_1"
+      ],
+      "used_by_shots": [],
+      "project_visual_mode": "photoreal",
+      "generation": {},
+      "last_reviewed": ""
+    },
+    {
+      "asset_id": "CHR004",
+      "category": "character",
+      "name": "王灵官·显圣版",
+      "version": "v01",
+      "status": "reviewed",
+      "files": [
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/王灵官_显圣版/王灵官显圣版.png"
+      ],
+      "source_ids": [
+        "SRC006"
+      ],
+      "reference_asset_ids": [],
+      "locked_features": [
+        "红面三眼",
+        "鎏金铠甲红袍飘带",
+        "持铁鞭",
+        "云海蓝天金晕",
+        "右下水印需剥离"
+      ],
+      "variable_states": [
+        "显圣状态"
+      ],
+      "used_by_episodes": [
+        "ep_1"
+      ],
+      "used_by_shots": [],
+      "project_visual_mode": "photoreal",
+      "generation": {},
+      "last_reviewed": ""
+    },
+    {
+      "asset_id": "CHR005",
+      "category": "character",
+      "name": "九华山香客群演（祈福特写群像）",
+      "version": "v01",
+      "status": "reviewed",
+      "files": [
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/群演/群演合照.png",
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/群演/书生.png",
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/群演/女子.png",
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/群演/男子.png",
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/群演/老年女人.png",
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/群演/老年男子.png"
+      ],
+      "source_ids": [
+        "SRC011",
+        "SRC008",
+        "SRC009",
+        "SRC010",
+        "SRC012",
+        "SRC013"
+      ],
+      "reference_asset_ids": [],
+      "locked_features": [
+        "素雅色系祈福群像",
+        "跪地持香老者/站姿男女/斗笠头巾",
+        "右下水印需剥离"
+      ],
+      "variable_states": [
+        "合照需防复制多人",
+        "单人图可作身份参考"
+      ],
+      "used_by_episodes": [
+        "ep_1"
+      ],
+      "used_by_shots": [],
+      "project_visual_mode": "photoreal",
+      "generation": {},
+      "last_reviewed": ""
+    },
+    {
+      "asset_id": "CHR006",
+      "category": "character",
+      "name": "地藏与王灵官同框显圣（关系构图）",
+      "version": "v01",
+      "status": "reviewed",
+      "files": [
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/人物/王灵官和地藏菩萨同框显圣.png"
+      ],
+      "source_ids": [
+        "SRC007"
+      ],
+      "reference_asset_ids": [],
+      "locked_features": [
+        "云端同框",
+        "左地藏（锡杖宝珠僧冠）右王灵官（铠甲持兵红袍）",
+        "阳光楼阁背景",
+        "右下水印需剥离"
+      ],
+      "variable_states": [
+        "同框显圣状态"
+      ],
+      "used_by_episodes": [
+        "ep_1"
+      ],
+      "used_by_shots": [],
+      "project_visual_mode": "photoreal",
+      "generation": {},
+      "last_reviewed": ""
+    },
+    {
+      "asset_id": "SCN001",
+      "category": "scene",
+      "name": "深山古林（山道石阶）",
+      "version": "v01",
+      "status": "reviewed",
+      "files": [
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/场景/深山古林.png"
+      ],
+      "source_ids": [
+        "SRC016"
+      ],
+      "reference_asset_ids": [],
+      "locked_features": [
+        "山间松林石阶步道",
+        "云雾山峦晨昏阳光",
+        "青苔巨岩"
+      ],
+      "variable_states": [],
+      "used_by_episodes": [
+        "ep_1"
+      ],
+      "used_by_shots": [],
+      "project_visual_mode": "photoreal",
+      "generation": {},
+      "last_reviewed": ""
+    },
+    {
+      "asset_id": "SCN002",
+      "category": "scene",
+      "name": "肉身宝殿（塔外殿宇）",
+      "version": "v01",
+      "status": "reviewed",
+      "files": [
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/场景/肉身宝殿.png"
+      ],
+      "source_ids": [
+        "SRC018"
+      ],
+      "reference_asset_ids": [],
+      "locked_features": [
+        "寺庙外景黄墙红柱飞檐",
+        "石阶栏杆香炉青烟",
+        "牌匾金字"
+      ],
+      "variable_states": [
+        "塔内内部画面靠CHR003环境版或文字补"
+      ],
+      "used_by_episodes": [
+        "ep_1"
+      ],
+      "used_by_shots": [],
+      "project_visual_mode": "photoreal",
+      "generation": {},
+      "last_reviewed": ""
+    },
+    {
+      "asset_id": "SCN003",
+      "category": "scene",
+      "name": "山间轿路（回京山道）",
+      "version": "v01",
+      "status": "reviewed",
+      "files": [
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/场景/山间轿路.png"
+      ],
+      "source_ids": [
+        "SRC015"
+      ],
+      "reference_asset_ids": [],
+      "locked_features": [
+        "云海山间青灰石阶蜿蜒",
+        "林木怪石灰蓝天空"
+      ],
+      "variable_states": [
+        "画面无轿，SEG005轿子需Prompt补"
+      ],
+      "used_by_episodes": [
+        "ep_1"
+      ],
+      "used_by_shots": [],
+      "project_visual_mode": "photoreal",
+      "generation": {},
+      "last_reviewed": ""
+    },
+    {
+      "asset_id": "SCN004",
+      "category": "scene",
+      "name": "五溪桥（塔门外）",
+      "version": "v01",
+      "status": "reviewed",
+      "files": [
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/场景/五溪桥（塔门外）.png"
+      ],
+      "source_ids": [
+        "SRC014"
+      ],
+      "reference_asset_ids": [],
+      "locked_features": [
+        "牌坊亭阁溪流石拱桥",
+        "冷暗雾霭"
+      ],
+      "variable_states": [
+        "立柱竖排文字需剥离"
+      ],
+      "used_by_episodes": [
+        "ep_1"
+      ],
+      "used_by_shots": [],
+      "project_visual_mode": "photoreal",
+      "generation": {},
+      "last_reviewed": ""
+    },
+    {
+      "asset_id": "SCN005",
+      "category": "scene",
+      "name": "肉身塔前（峰顶塔门）",
+      "version": "v01",
+      "status": "reviewed",
+      "files": [
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/场景/肉身塔前.png"
+      ],
+      "source_ids": [
+        "SRC017"
+      ],
+      "reference_asset_ids": [],
+      "locked_features": [
+        "峰顶古建筑与古塔",
+        "石阶栈道层叠山峦云霭",
+        "仙侠意境"
+      ],
+      "variable_states": [],
+      "used_by_episodes": [
+        "ep_1"
+      ],
+      "used_by_shots": [],
+      "project_visual_mode": "photoreal",
+      "generation": {},
+      "last_reviewed": ""
+    },
+    {
+      "asset_id": "SCN006",
+      "category": "scene",
+      "name": "金光显圣空间（仙境）",
+      "version": "v01",
+      "status": "reviewed",
+      "files": [
+        "E:/我的工作室/AI视频/肉身塔传说/03_图像资产/场景/金光打开现实时空显圣场景.png"
+      ],
+      "source_ids": [
+        "SRC019"
+      ],
+      "reference_asset_ids": [],
+      "locked_features": [
+        "山巅庙宇金色光束光环",
+        "云海铺谷",
+        "神圣庄严"
+      ],
+      "variable_states": [],
+      "used_by_episodes": [
+        "ep_1"
+      ],
+      "used_by_shots": [],
+      "project_visual_mode": "photoreal",
+      "generation": {},
+      "last_reviewed": ""
+    }
+  ]
+}
